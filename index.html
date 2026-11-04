@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Expense Tracker</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main class="container">
+            <header class="head">
+                <div class="brand">
+                    <span class="brand-dot"></span>
+                    <h1>Expense Tracker</h1>
+                </div>
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+                <button class="clear-btn">Clear All</button>
+            </header>
+        <section class="top-grid">
+           <div class="card total-card">
+                <div class="card-glow"></div>
+                <div>
+                    <span class="label">Total Expenses</span>
+                    <h2 class="total-expenses">₦0</h2>
+                </div>
+                <div class="card-footer">
+                    <span class="expense-count"> 0 expenses</span>
+                    <span class="active">● Active</span>
+                </div>
+           </div>
+           <div class="card add-card">
+                <h3 class="label">Add Expense</h3>
+
+                <form>
+                    <input type="text" required placeholder="Description (e.g. Food)">
+                    <input type="number"  min="1" required placeholder="Amount in ₦ (e.g. 2500)">
+                    <button type="submit" class="add-btn">Add Expense</button>
+                </form>
+            </div> 
+        </section>  
+        <section class="card expenses-card">
+             <div class="list-header">
+                <h3 class="label">Your Expenses</h3>
+                <span class="recent">Recent</span>
+            </div>
+            <div class="expense-list">
+                
+                
+            </div>
+            <div class="empty-state">
+                <div class="empty-icon">□</div>
+                <p>No expenses added yet.</p>
+            </div>
+            <div class="empty-state">
+                <div class="empty-icon">□</div>
+                <p>No expenses added yet.</p>
+            </div>
+        </section>  
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
