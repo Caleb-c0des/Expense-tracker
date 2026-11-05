@@ -49,8 +49,8 @@ savedExpensesArray.forEach(function (expenseData) {
                item.amount === expenseData.amount;
     });
 
-    expenses.splice(index, 1);                                // remove it from the notebook
-    localStorage.setItem("expense", JSON.stringify(expenses)); // save the notebook
+    expenses.splice(index, 1);                               
+    localStorage.setItem("expense", JSON.stringify(expenses))
      updateTotal();                                      
     });
     updateTotal();

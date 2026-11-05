@@ -333,7 +333,7 @@ form {
 }
 
 .theme-switch input:checked + .slider {
-    background: #4f46e5;
+    background: #4f56e5;
 }
 
 .theme-switch input:checked + .slider::before {
